@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abd portifolo</title>
+    <title>Abd portfolio</title>
     <!-- tailwind css script -->
       <script src="https://cdn.tailwindcss.com"></script> 
      <!-- font awesome link -->
@@ -11,13 +11,15 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="icon" href="materal/fa761bd8-2b8b-4604-a4ca-ac9b18de5ac0.jpeg">
+      <!-- devicon link-->
+       <link rel="stylesheet"href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body class="m-0 p-0 bg-stone-200">
 
 <section class=" w-full" style="background: url('.//materal/cc736176-3e1b-4ac2-b00a-505ce5ed91f2.gif'); height: 75vh;">
 
   <!-- Navbar -->
-  <nav class="top-0 left-0 w-full z-50 backdrop-blur-md">
+  <nav class="top-0 left-0 w-full z-50 backdrop-blur-md fixed">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between h-16">
 
@@ -31,7 +33,7 @@
           <a href="index.html" class="hover:text-sky-500 transition text-white">Home</a>
           <a href="about.html" class="hover:text-sky-500  transition text-white">About me</a>
           <a href="services.html" class="hover:text-sky-500  transition text-white">Services</a>
-          <a href="project.html" class="hover:text-sky-500  transition text-white">My projectes</a>
+          <a href="project.html" class="hover:text-sky-500  transition text-white">My projects</a>
           <a href="contact.html" class="hover:text-sky-500  transition text-white">Contact</a>
         </div>
 
@@ -47,7 +49,7 @@
       <a href="index.html" class="block px-4 py-3 hover:bg-white/10 text-white">Home</a>
       <a href="about.html" class="block px-4 py-3 hover:bg-white/10 text-white">About me</a>
       <a href="services.html" class="block px-4 py-3 hover:bg-white/10 text-white">Services</a>
-      <a href="project.html" class="block px-4 py-3 hover:bg-white/10 text-white">My projectes</a>
+      <a href="project.html" class="block px-4 py-3 hover:bg-white/10 text-white">My projects</a>
       <a href="contact.html" class="block px-4 py-3 hover:bg-white/10 text-white">Contact</a>
     </div>
   
@@ -87,16 +89,16 @@
 
 
 <!-- about section -->
-<section class="w-full" style="height: 40vh;">
+<section class="w-full max-sm:mb-[20rem]" style="height: 40vh;">
 
 <h2 class="text-center text-2xl mt-5">About me</h2>
 
 <div class="flex w-full justify-center items-center gap-40 mt-10  max-sm:flex-col max-md:flex-col max-sm:gap-10 ">
 
-<img src="materal/fa761bd8-2b8b-4604-a4ca-ac9b18de5ac0.jpeg" alt="image" class="rounded-full w-40 max-md:-mb-32">
+<img src="materal/fa761bd8-2b8b-4604-a4ca-ac9b18de5ac0.jpeg" alt="image" class="rounded-full w-40 max-sm:mb-[6rem]">
 
 
-<div class="bg-white w-fit flex rounded-md p-5 gap-12 max-sm:flex-col-reverse max-md:flex-col-reverse max-lg:flex-col-reverse">
+<div class="bg-white w-fit flex rounded-md p-5 gap-12 max-sm:flex-col-reverse max-md:flex-col-reverse max-lg:flex-col-reverse max-md:mb-20 max-sm:mb-[20rem] max-md:mt-[-6rem]">
 
 <div class="flex flex-col justify-center items-center">
 <p>I am a young programmer and I work in developing the front <br> and back interfaces
@@ -112,10 +114,10 @@
 <div class="mt-3">
 
 
-<!-- Devolepment div -->
+<!-- Develepment div -->
 <div>
     <div class="flex justify-between items-center">
-<h3>Devolepment</h3>
+<h3>Develepment</h3>
 
 <h3 class="text-gray-500">80%</h3>
 
@@ -128,10 +130,10 @@
 </div>
 
 
-<!-- problem solveing div -->
+<!-- problem solving div -->
 <div class="mt-3">
 <div class="flex justify-between items-center">
-<h3>Problem soleving</h3>
+<h3>Problem solving</h3>
 
 <h3 class="text-gray-500">90%</h3>
 
@@ -173,13 +175,13 @@
 
 <!-- services section -->
 
-<section class="flex w-full flex-col max-sm:mt-80 h-96 max-md:mt-80 max-lg:mt-40 "> 
-<h2 class="text-2xl text-center mt-5">Services</h2>
+<section class="flex w-full flex-col max-sm:mt-60 h-96 max-lg:mt-40 max-md:mt-[21rem]"> 
+<h2 class="text-3xl text-center mt-5">Services</h2>
 
 <div class="flex w-full justify-center items-center mt-10 max-sm:flex-col max-md:flex-col gap-10">
 
 <!-- ui ux design  -->
-<div class="flex flex-col bg-violet-500 rounded-xl w-fit h-72 justify-center items-center">
+<div class="flex flex-col bg-violet-500 rounded-xl w-fit h-72 justify-center items-center max-lg:h-96 max-md:h-80">
 
 <img src="materal/9700_4_2_01-Photoroom.png" alt="ui/ux image" class="w-44 rounded-lg -mt-10">
 
@@ -199,7 +201,7 @@ User-Centered, Intuitive, Clean, Modern, <br> Responsive,
 
 
 <!-- web dev -->
-<div class="flex flex-col bg-yellow-500 rounded-xl w-fit h-72 justify-center items-center">
+<div class="flex flex-col bg-yellow-500 rounded-xl w-fit h-72 justify-center items-center max-lg:h-96">
 
 <img src="materal/retro-computer-icon-isolated-Photoroom.png" alt="web dev image" class="w-44 rounded-lg -mt-10">
 
@@ -220,7 +222,7 @@ User-Centered, Intuitive, Clean, Modern, <br> Responsive,
 
 <!-- clean code -->
 
-<div class="flex flex-col bg-sky-500 rounded-xl w-fit h-72 justify-center items-center">
+<div class="flex flex-col bg-sky-500 rounded-xl w-fit h-72 justify-center items-center max-lg:h-96">
 
 <img src="materal/08-Photoroom.png" alt="clean code image" class="w-44 rounded-lg -mt-10">
 
@@ -240,8 +242,159 @@ User-Centered, Intuitive, Clean, Modern, <br> Responsive,
 
 </div>
 
+</section>
+
+
+<!-- Experince section -->
+ <section class="max-sm:mt-[36rem] w-full max-lg:mt-32 max-md:mt-[37rem]">
+
+<h2 class="text-center text-3xl mt-6 max-sm:pt-80 max-sm:-mb-80 max-md:pt-80 max-md:-mb-96">Experince</h2>
+
+<div class="w-auto h-80 flex justify-center items-center max-sm:flex-col max-md:flex-col gap-10 -mt-10 max-sm:w-full max-md:mt-[24rem] max-sm:h-full max-md:w-full max-md:h-full max-sm:mt-[21rem]">
+
+<!-- number of projectes -->
+<div class="bg-black rounded-full h-32 w-32 max-sm:w-36 max-sm:h-36 flex flex-col justify-center items-center gap-3 max-md:mt-5">
+
+<i class="fa-solid fa-award text-3xl text-white"></i>
+
+<p class="text-center text-white">30 Projectes</p>
+
+</div>
+
+<!-- Number of cliends -->
+<div class="bg-black rounded-full h-32 w-32 max-sm:w-36 max-sm:h-36 flex flex-col justify-center items-center gap-3">
+
+<i class="fa-solid fa-users text-3xl text-white"></i>
+
+<p class="text-center text-white">50 Clients</p>
+
+</div>
+
+<!-- customers how to feel about my work -->
+<div class="bg-black rounded-full h-32 w-32 max-sm:w-36 max-sm:h-36 flex flex-col justify-center items-center gap-3">
+
+<i class="fa-regular fa-face-smile-beam text-3xl text-white"></i>
+
+<p class="text-center text-white">90% Happy</p>
+
+</div>
+
+<!-- quality of my work-->
+<div class="bg-black rounded-full h-32 w-32 max-sm:w-36 max-sm:h-36 flex flex-col justify-center items-center gap-3">
+
+<i class="fa-solid fa-chart-line text-3xl text-white"></i>
+
+<p class="text-center text-white">High quality</p>
+
+</div>
+
+</div>
+
+ </section>
+
+
+
+ <!-- skilles -->
+<section class="w-full h-[25vh]">
+
+<h2 class="text-3xl text-center mt-[-4rem] max-sm:mt-[2rem] max-md:mt-[2rem]">My skilles</h2>
+
+<div class="flex justify-center items-center max-sm:flex-col max-md:flex-col gap-10 mt-10">
+
+<!-- html -->
+<div class="flex flex-col w-32 h-32 max-sm:w-36 max-sm:h-36 bg-black gap-3 rounded-full justify-center items-center">
+
+<i class="fa-brands fa-html5 text-white text-[2.7rem]"></i>
+
+<p class="text-white text-center">HTML</p>
+
+</div>
+
+<!-- css -->
+<div class="flex flex-col w-32 h-32 max-sm:w-36 max-sm:h-36 bg-black gap-3 rounded-full justify-center items-center">
+
+<i class="fa-brands fa-css3-alt text-white text-[2.7rem]"></i>
+
+<p class="text-white text-center">CSS</p>
+
+</div>
+
+<!-- javascript -->
+ <div class="flex flex-col w-32 h-32 max-sm:w-36 max-sm:h-36 bg-black gap-3 rounded-full justify-center items-center">
+
+<i class="fa-brands fa-square-js text-white text-[2.7rem]"></i>
+
+<p class="text-white text-center">JAVASCRIPT</p>
+
+</div>
+
+<!-- bootstrap -->
+ <div class="flex flex-col w-32 h-32 max-sm:w-36 max-sm:h-36 bg-black gap-3 rounded-full justify-center items-center">
+
+<i class="fa-brands fa-bootstrap text-white text-[2.7rem]"></i>
+
+<p class="text-white text-center">BOOTSTRAP</p>
+
+</div>
+
+<!-- tailwind css -->
+ <div class="flex flex-col w-32 h-32 max-sm:w-36 max-sm:h-36 bg-black gap-3 rounded-full justify-center items-center">
+
+<i class="devicon-tailwindcss-plain text-4xl text-white text-[3rem]"></i>
+
+<p class="text-white text-center">TAILWIND CSS</p>
+
+</div>
+
+</div>
 
 </section>
+
+
+<!-- contact section -->
+ <section class="w-full h-[45vh] max-sm:flex max-sm:flex-col max-sm:mt-[48rem] max-sm:mb-[5rem] max-md:mt-[43rem] max-md:mb-[5rem]">
+
+<h2 class="text-center text-3xl max-sm:mb-[13rem] max-md:mb-[18rem]">Contact me</h2>
+
+<div class="flex max-sm:flex-col max-md:flex-col justify-center items-center gap-10 mt-20">
+
+<div class="flex flex-col mt-[-16.5rem]">
+
+<h3>Let's talk me about your project.</h3>
+
+<p>Don't worry, I will get your work done</p>
+
+</div>
+
+
+<div class="flex flex-col gap-5">
+<div class="flex gap-5">
+
+<input type="text" placeholder="First name" class="rounded-3xl h-10 bg-sky-50 px-6 py-4 max-sm:px-2">
+
+<input type="text" placeholder="Last name" class="rounded-3xl h-10 bg-sky-50 px-6 py-4 max-sm:px-2">
+
+</div>
+
+<input type="email" placeholder="Enter your email" class="rounded-3xl h-10 bg-sky-50 pr-20 pl-6 py-5">
+
+<textarea name="" id="message" class="rounded-3xl bg-sky-50 h-36 px-6 py-3" placeholder="Enter your message"></textarea>
+
+<button class="rounded-2xl bg-sky-500 w-36 h-10 hover:bg-white transition-all duration-300 max-md:mb-[6rem]" type="submit" id="message-btn">Send message</button>
+
+</div>
+
+</div>
+
+ </section>
+
+ <!-- fotter section -->
+
+ <footer class="w-full h-24 bg-sky-500 flex justify-center items-center lg:mt-[15rem] maxmd:mt-[27rem] md:mt-[40rem]" style="margin-top: 2rem;">
+
+<p class="text-white">&copy; All rights reserved to Abdelrahman Mostafa.</p>
+
+ </footer>
 
 
 <script src="main.js"></script>
