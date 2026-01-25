@@ -16,7 +16,7 @@
 </head>
 <body class="m-0 p-0 bg-stone-200">
 
-<section class=" w-full" style="background: url('.//materal/cc736176-3e1b-4ac2-b00a-505ce5ed91f2.gif'); height: 75vh;">
+<header class=" w-full pt-16" style="background: url('.//materal/cc736176-3e1b-4ac2-b00a-505ce5ed91f2.gif'); height: 75vh;">
 
   <!-- Navbar -->
   <nav class="top-0 left-0 w-full z-50 backdrop-blur-md fixed">
@@ -85,7 +85,7 @@
 </div>
 
 
-</section>
+</header>
 
 
 <!-- about section -->
@@ -352,7 +352,7 @@ User-Centered, Intuitive, Clean, Modern, <br> Responsive,
 
 
 <!-- contact section -->
- <section class="w-full h-[45vh] max-sm:flex max-sm:flex-col max-sm:mt-[48rem] max-sm:mb-[5rem] max-md:mt-[43rem] max-md:mb-[5rem]">
+ <section class="w-full h-[45vh] max-sm:flex max-sm:flex-col max-sm:mt-[48rem] max-sm:mb-[6rem] max-md:mt-[43rem] max-md:mb-[5rem]">
 
 <h2 class="text-center text-3xl max-sm:mb-[13rem] max-md:mb-[18rem]">Contact me</h2>
 
@@ -370,9 +370,9 @@ User-Centered, Intuitive, Clean, Modern, <br> Responsive,
 <div class="flex flex-col gap-5">
 <div class="flex gap-5">
 
-<input type="text" placeholder="First name" class="rounded-3xl h-10 bg-sky-50 px-6 py-4 max-sm:px-2">
+<input type="text" placeholder="First name" class="rounded-3xl h-10 bg-sky-50 px-6 py-4 w-full max-w-md">
 
-<input type="text" placeholder="Last name" class="rounded-3xl h-10 bg-sky-50 px-6 py-4 max-sm:px-2">
+<input type="text" placeholder="Last name" class="rounded-3xl h-10 bg-sky-50 px-6 py-4 w-full max-w-md">
 
 </div>
 
@@ -380,7 +380,7 @@ User-Centered, Intuitive, Clean, Modern, <br> Responsive,
 
 <textarea name="" id="message" class="rounded-3xl bg-sky-50 h-36 px-6 py-3" placeholder="Enter your message"></textarea>
 
-<button class="rounded-2xl bg-sky-500 w-36 h-10 hover:bg-white transition-all duration-300 max-md:mb-[6rem]" type="submit" id="message-btn">Send message</button>
+<button class="rounded-2xl bg-sky-500 w-36 h-10 hover:bg-white transition-all duration-300 max-md:mb-[6rem] mb-40" type="submit" id="message-btn">Send message</button>
 
 </div>
 
@@ -390,7 +390,7 @@ User-Centered, Intuitive, Clean, Modern, <br> Responsive,
 
  <!-- fotter section -->
 
- <footer class="w-full h-24 bg-sky-500 flex justify-center items-center lg:mt-[15rem] maxmd:mt-[27rem] md:mt-[40rem]" style="margin-top: 2rem;">
+ <footer class="w-full h-24 bg-sky-500 flex justify-center items-center lg:mt-[15rem] maxmd:mt-[27rem] md:mt-[40rem] sm:mt-[30rem] " style="margin-top: 2rem;">
 
 <p class="text-white">&copy; All rights reserved to Abdelrahman Mostafa.</p>
 
@@ -398,5 +398,18 @@ User-Centered, Intuitive, Clean, Modern, <br> Responsive,
 
 
 <script src="main.js"></script>
+
+<style>
+
+@media (max-width:640px) {
+  
+  section{
+
+height: auto;
+  };
+
+};
+
+</style>
 </body>
 </html>
