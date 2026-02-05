@@ -3,9 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me - Abd Portfolio</title>
+    <!-- tailwind css script -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="materal/fa761bd8-2b8b-4604-a4ca-ac9b18de5ac0.jpeg">
+    <!-- devicon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
-<body>
-    
-</body>
-</html>
+<body class="m-0 p-0 bg-stone-200">
+
+<!-- Navbar -->
+<nav class="top-0 left-0 w-full z-50 backdrop-blur-md fixed bg-black/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <div class="text-xl sm:text-2xl font-bold cursor-pointer text-white">
+          Abdelrahman
+        </div>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-4 lg:space-x-6">
+          <a href="index.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Home</a>
+          <a href="about.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base border-b-2 border-sky-500">About me</a>
+          <a href="services.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Services</a>
+          <a href="project.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">My projects</a>
+          <a href="contact.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Contact</a>
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="menuBtn" class="md:hidden focus:outline-none text-white text-3xl">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden backdrop-blur-md">
+      <a href="index.html" class="block px-4 py-3 hover:bg-white/10 text-white">Home</a>
+      <a href="about.html" class="block px-4 py-3 hover:bg-white/10 text-white bg-white/10">About me</a>
+      <a href="services.html" class="block px-4 py-3 hover:bg-white/10 text-white">Services</a>
+      <a href="project.html" class="block px-4 py-3 hover:bg-white/10 text-white">My projects</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-white/10 text-white">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="w-full min-h-[50vh] bg-gradient-to-r from-sky-500 to-violet-500 flex items-center justify-center px-4 pt-24 pb-12">
+    <div class="text-center">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">About Me</h1>
+        <p class="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+            Discover my journey, skills, and passion for creating amazing digital experiences
+        </p>
+    </div>
+</section>
+
+<!-- Main About Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Profile Card -->
+        <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12 mb-12">
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-start">
+                
+                <!-- Profile Image -->
+                <div class="flex-shrink-0">
+                    <img src="materal/fa761bd8-2b8b-4604-a4ca-ac9b18de5ac0.jpeg" 
+                         alt="Abdelrahman Mostafa" 
+                         class="rounded-full w-48 sm:w-56 md:w-64 shadow-xl border-4 border-sky-500">
+                </div>
+
+                <!-- Profile Info -->
+                <div class="flex-1 text-center lg:text-left">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-3">Abdelrahman Mostafa</h2>
+                    <h3 class="text-lg sm:text-xl md:text-2xl text-sky-500 font-semibold mb-4">Full Stack Developer</h3>
+                    
+                    <p class="text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed mb-6">
+                        I am a passionate young programmer specializing in full-stack web development. 
+                        With a keen eye for detail and a commitment to excellence, I create high-quality 
+                        websites that combine beautiful design with powerful functionality. My focus is on 
+                        delivering exceptional user experiences through clean, efficient code and innovative solutions.
+                    </p>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+                        <div class="bg-sky-50 rounded-lg p-4">
+                            <p class="text-2xl sm:text-3xl font-bold text-sky-500">30+</p>
+                            <p class="text-xs sm:text-sm text-gray-600">Projects</p>
+                        </div>
+                        <div class="bg-violet-50 rounded-lg p-4">
+                            <p class="text-2xl sm:text-3xl font-bold text-violet-500">50+</p>
+                            <p class="text-xs sm:text-sm text-gray-600">Clients</p>
+                        </div>
+                        <div class="bg-yellow-50 rounded-lg p-4">
+                            <p class="text-2xl sm:text-3xl font-bold text-yellow-500">2+</p>
+                            <p class="text-xs sm:text-sm text-gray-600">Years Exp</p>
+                        </div>
+                        <div class="bg-green-50 rounded-lg p-4">
+                            <p class="text-2xl sm:text-3xl font-bold text-green-500">90%</p>
+                            <p class="text-xs sm:text-sm text-gray-600">Satisfaction</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="flex gap-4 justify-center lg:justify-start">
+                        <a href="https://www.facebook.com/share/1Ae4W8EPcQ/" 
+                           class="bg-sky-500 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center hover:bg-sky-600 transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/qr/TRS7X4DEGQ5AB1" 
+                           class="bg-green-500 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:benauf7@gmail.com" 
+                           class="bg-red-500 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center hover:bg-red-600 transition">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://www.instagram.com/zxzbody2010?igsh=aHd4b3hjdDBvMjRq" 
+                           class="bg-pink-500 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abdelrahman-mostafa-44a06b3a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+                           class="bg-blue-700 text-white w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center hover:bg-blue-800 transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">Technical Skills</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+                
+                <!-- Frontend Skills -->
+                <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-laptop-code text-sky-500"></i>
+                        Frontend Development
+                    </h3>
+                    
+                    <div class="space-y-4 sm:space-y-5">
+                        <!-- HTML -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">HTML5</span>
+                                <span class="text-sm text-gray-500">95%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-orange-500 h-2.5 rounded-full w-[95%]"></div>
+                            </div>
+                        </div>
+
+                        <!-- CSS -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">CSS3</span>
+                                <span class="text-sm text-gray-500">90%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-500 h-2.5 rounded-full w-[90%]"></div>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">JavaScript</span>
+                                <span class="text-sm text-gray-500">85%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-yellow-500 h-2.5 rounded-full w-[85%]"></div>
+                            </div>
+                        </div>
+
+                        <!-- Tailwind CSS -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">Tailwind CSS</span>
+                                <span class="text-sm text-gray-500">88%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-cyan-500 h-2.5 rounded-full w-[88%]"></div>
+                            </div>
+                        </div>
+
+                        <!-- Bootstrap -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">Bootstrap</span>
+                                <span class="text-sm text-gray-500">85%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-purple-600 h-2.5 rounded-full w-[85%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Other Skills -->
+                <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+                    <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-server text-violet-500"></i>
+                        Other Skills
+                    </h3>
+                    
+                    <div class="space-y-4 sm:space-y-5">
+                        <!-- Problem Solving -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">Problem Solving</span>
+                                <span class="text-sm text-gray-500">90%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-red-500 h-2.5 rounded-full w-[90%]"></div>
+                            </div>
+                        </div>
+
+                        <!-- Clean Code -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">Clean Code</span>
+                                <span class="text-sm text-gray-500">90%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-violet-500 h-2.5 rounded-full w-[90%]"></div>
+                            </div>
+                        </div>
+
+                        <!-- UI/UX Design -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">UI/UX Design</span>
+                                <span class="text-sm text-gray-500">80%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-pink-500 h-2.5 rounded-full w-[80%]"></div>
+                            </div>
+                        </div>
+
+                        <!-- Responsive Design -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">Responsive Design</span>
+                                <span class="text-sm text-gray-500">92%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-green-500 h-2.5 rounded-full w-[92%]"></div>
+                            </div>
+                        </div>
+
+                        <!-- Version Control (Git) -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm sm:text-base font-semibold text-gray-700">Git & GitHub</span>
+                                <span class="text-sm text-gray-500">75%</span>
+                            </div>
+                            <div class="bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-gray-800 h-2.5 rounded-full w-[75%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- What I Do Section -->
+        <div class="mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">What I Do</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                
+                <!-- Web Development -->
+                <div class="bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="bg-white w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa-solid fa-code text-3xl sm:text-4xl text-sky-500"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white text-center mb-3">Web Development</h3>
+                    <p class="text-white/90 text-sm sm:text-base text-center leading-relaxed">
+                        Building responsive and interactive websites using modern technologies and best practices.
+                    </p>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="bg-gradient-to-br from-violet-500 to-purple-600 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="bg-white w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa-solid fa-palette text-3xl sm:text-4xl text-violet-500"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white text-center mb-3">UI/UX Design</h3>
+                    <p class="text-white/90 text-sm sm:text-base text-center leading-relaxed">
+                        Creating beautiful, intuitive interfaces that provide excellent user experiences.
+                    </p>
+                </div>
+
+                <!-- Performance Optimization -->
+                <div class="bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 md:col-span-2 lg:col-span-1">
+                    <div class="bg-white w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa-solid fa-rocket text-3xl sm:text-4xl text-yellow-500"></i>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-white text-center mb-3">Performance</h3>
+                    <p class="text-white/90 text-sm sm:text-base text-center leading-relaxed">
+                        Optimizing websites for speed, efficiency, and smooth user interactions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Education & Experience Timeline -->
+        <div class="mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">My Journey</h2>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-4 sm:left-1/2 transform sm:-translate-x-1/2 h-full w-1 bg-sky-500"></div>
+                
+                <div class="space-y-8 sm:space-y-12">
+                    
+                    <!-- Item 1 -->
+                    <div class="relative flex items-start sm:items-center gap-4 sm:gap-8">
+                        <div class="absolute left-0 sm:left-1/2 transform sm:-translate-x-1/2 w-8 h-8 sm:w-12 sm:h-12 bg-sky-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
+                            <i class="fa-solid fa-graduation-cap text-white text-sm sm:text-lg"></i>
+                        </div>
+                        
+                        <div class="ml-12 sm:ml-0 sm:w-5/12 sm:text-right sm:pr-8">
+                            <div class="bg-white rounded-xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition">
+                                <span class="text-sky-500 font-bold text-sm sm:text-base">2022 - 2023</span>
+                                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mt-1">Started Web Development</h3>
+                                <p class="text-sm sm:text-base text-gray-600 mt-2">
+                                    Began learning HTML, CSS, and JavaScript fundamentals
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-
