@@ -3,9 +3,564 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Services - Abd Portfolio</title>
+    <!-- tailwind css script -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="materal/fa761bd8-2b8b-4604-a4ca-ac9b18de5ac0.jpeg">
 </head>
-<body>
-    
+<body class="m-0 p-0 bg-stone-200">
+
+<!-- Navbar -->
+<nav class="top-0 left-0 w-full z-50 backdrop-blur-md fixed bg-black/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <div class="text-xl sm:text-2xl font-bold cursor-pointer text-white">
+          Abdelrahman
+        </div>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-4 lg:space-x-6">
+          <a href="index.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Home</a>
+          <a href="about.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">About me</a>
+          <a href="services.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base border-b-2 border-sky-500">Services</a>
+          <a href="project.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">My projects</a>
+          <a href="contact.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Contact</a>
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="menuBtn" class="md:hidden focus:outline-none text-white text-3xl">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden backdrop-blur-md">
+      <a href="index.html" class="block px-4 py-3 hover:bg-white/10 text-white">Home</a>
+      <a href="about.html" class="block px-4 py-3 hover:bg-white/10 text-white">About me</a>
+      <a href="services.html" class="block px-4 py-3 hover:bg-white/10 text-white bg-white/10">Services</a>
+      <a href="project.html" class="block px-4 py-3 hover:bg-white/10 text-white">My projects</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-white/10 text-white">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="w-full min-h-[50vh] bg-gradient-to-r from-sky-500 to-violet-500 flex items-center justify-center px-4 pt-24 pb-12">
+    <div class="text-center">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">My Services</h1>
+        <p class="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+            Professional web development services tailored to bring your digital vision to life
+        </p>
+    </div>
+</section>
+
+<!-- Main Services Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Services Overview Card -->
+        <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12 mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">What I Offer</h2>
+            <p class="text-center text-gray-600 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+                I provide comprehensive web development solutions from design to deployment. 
+                Each service is crafted with attention to detail, modern technologies, and best practices 
+                to ensure your project stands out and performs exceptionally.
+            </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- UI/UX Design -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-violet-500 to-purple-600 p-8">
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-palette text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center">UI/UX Design</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        Creating beautiful, intuitive interfaces that provide exceptional user experiences. 
+                        I focus on user-centered design principles to ensure your website is both attractive and functional.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-violet-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-violet-500"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">User-centered design approach</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-violet-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-violet-500"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Modern and clean interfaces</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-violet-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-violet-500"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Interactive prototypes</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-violet-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-violet-500"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Color scheme & typography</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-yellow-500 to-orange-600 p-8">
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-code text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center">Web Development</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        Building responsive, fast, and interactive websites using modern technologies. 
+                        Every line of code is written with performance and maintainability in mind.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-yellow-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-yellow-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Responsive web design</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-yellow-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-yellow-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Cross-browser compatibility</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-yellow-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-yellow-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Fast loading speed</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-yellow-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-yellow-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">SEO optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend Development -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-sky-500 to-blue-600 p-8">
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-laptop-code text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center">Frontend Development</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        Crafting pixel-perfect interfaces with HTML, CSS, JavaScript, and modern frameworks. 
+                        Your website will be interactive, accessible, and performant.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-sky-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-sky-500"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">HTML5, CSS3, JavaScript</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-sky-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-sky-500"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Tailwind CSS & Bootstrap</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-sky-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-sky-500"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Interactive animations</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-sky-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-sky-500"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Performance optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Responsive Design -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-green-500 to-emerald-600 p-8">
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-mobile-screen-button text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center">Responsive Design</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        Ensuring your website looks perfect on all devices. From smartphones to large desktops, 
+                        your site will adapt beautifully to any screen size.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-green-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Mobile-first design</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-green-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Tablet optimization</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-green-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Flexible layouts</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-green-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-green-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Touch-friendly interface</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Website Maintenance -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-pink-500 to-rose-600 p-8">
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-wrench text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center">Website Maintenance</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        Keep your website running smoothly with regular updates and support. 
+                        I ensure your site stays secure, fast, and up-to-date.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-pink-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-pink-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Regular updates</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-pink-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-pink-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Bug fixes & troubleshooting</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-pink-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-pink-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Security monitoring</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-pink-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-pink-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Content updates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Optimization -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-8">
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-rocket text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center">Performance Optimization</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        Maximize your website's speed and efficiency. Fast websites provide better user experiences 
+                        and rank higher in search engines.
+                    </p>
+
+<div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-indigo-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Speed optimization</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-indigo-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Image optimization</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-indigo-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Code minification</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="bg-indigo-100 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-indigo-600"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm sm:text-base">Performance audits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Me Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+        
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">Why Choose Me</h2>
+        <p class="text-center text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto text-base sm:text-lg">
+            What makes working with me different and beneficial for your project
+        </p>
+
+        <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Quality Work -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-violet-500 to-purple-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-star text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">High Quality</h3>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        Top-notch work with attention to every detail, ensuring excellence in every project.
+                    </p>
+                </div>
+
+                <!-- Fast Delivery -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-green-500 to-emerald-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-clock text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">On-Time Delivery</h3>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        Meeting deadlines without compromising quality. Your project delivered on schedule.
+                    </p>
+                </div>
+
+                <!-- Support -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-sky-500 to-blue-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-headset text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">24/7 Support</h3>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        Always available for questions and support, even after project completion.
+                    </p>
+                </div>
+
+                <!-- Clean Code -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-yellow-500 to-orange-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-file-code text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">Clean Code</h3>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        Well-organized, documented code that's easy to maintain and scale.
+                    </p>
+                </div>
+
+                <!-- Responsive -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-pink-500 to-rose-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-mobile-screen text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">Fully Responsive</h3>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        Perfect appearance and functionality on all devices and screen sizes.
+                    </p>
+                </div>
+
+                <!-- Affordable -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-indigo-500 to-purple-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-dollar-sign text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3">Affordable Pricing</h3>
+                    <p class="text-gray-600 text-sm sm:text-base leading-relaxed">
+                        Competitive rates without hidden fees. Quality work that fits your budget.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Work Process Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">My Work Process</h2>
+        <p class="text-center text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto text-base sm:text-lg">
+            A simple, transparent process from start to finish
+        </p>
+
+        <div class="relative">
+            <!-- Timeline Line -->
+            <div class="absolute left-8 sm:left-1/2 transform sm:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-violet-500 to-pink-500 hidden sm:block"></div>
+            
+            <div class="space-y-12">
+                
+                <!-- Step 1 -->
+                <div class="relative flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
+                    <div class="absolute left-8 sm:left-1/2 transform sm:-translate-x-1/2 w-16 h-16 bg-gradient-to-br from-violet-500 to-purple-600 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
+                        <span class="text-white font-bold text-xl">1</span>
+                    </div>
+                    
+                    <div class="ml-24 sm:ml-0 sm:w-5/12 sm:text-right sm:pr-12">
+                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                            <div class="flex sm:flex-row-reverse items-center gap-3 mb-3">
+                                <i class="fa-solid fa-comments text-violet-500 text-2xl"></i>
+                                <h3 class="text-xl font-bold text-gray-800">Consultation</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm sm:text-base">
+                                Discuss your project requirements, goals, and expectations to create a clear vision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 sm:justify-end">
+                    <div class="absolute left-8 sm:left-1/2 transform sm:-translate-x-1/2 w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
+                        <span class="text-white font-bold text-xl">2</span>
+                    </div>
+                    
+                    <div class="ml-24 sm:ml-0 sm:w-5/12 sm:pl-12">
+                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fa-solid fa-pencil-ruler text-sky-500 text-2xl"></i>
+                                <h3 class="text-xl font-bold text-gray-800">Planning</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm sm:text-base">
+                                Create a detailed plan, timeline, and design mockups for your approval.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8">
+                    <div class="absolute left-8 sm:left-1/2 transform sm:-translate-x-1/2 w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
+                        <span class="text-white font-bold text-xl">3</span>
+                    </div>
+                    
+                    <div class="ml-24 sm:ml-0 sm:w-5/12 sm:text-right sm:pr-12">
+                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                            <div class="flex sm:flex-row-reverse items-center gap-3 mb-3">
+                                <i class="fa-solid fa-code text-yellow-600 text-2xl"></i>
+                                <h3 class="text-xl font-bold text-gray-800">Development</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm sm:text-base">
+                                Build your website with clean, efficient code and modern best practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 sm:justify-end">
+                    <div class="absolute left-8 sm:left-1/2 transform sm:-translate-x-1/2 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full border-4 border-white shadow-lg flex items-center justify-center z-10">
+                        <span class="text-white font-bold text-xl">4</span>
+                    </div>
+                    
+                    <div class="ml-24 sm:ml-0 sm:w-5/12 sm:pl-12">
+                        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fa-solid fa-rocket text-green-600 text-2xl"></i>
+                                <h3 class="text-xl font-bold text-gray-800">Launch</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm sm:text-base">
+                                Test, refine, and deliver your finished project with full documentation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-r from-violet-500 via-purple-500 to-pink-500">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+            Have a Project in Mind?
+        </h2>
+        <p class="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto">
+            Let's collaborate and create something amazing together
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="inline-flex items-center justify-center gap-3 bg-white text-violet-500 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 hover:text-gray-800 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                <i class="fa-solid fa-paper-plane"></i>
+                Contact Me
+            </a>
+            <a href="about.html" class="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-violet-500 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                <i class="fa-regular fa-address-card"></i>
+                Know About Me
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gradient-to-r from-sky-500 to-violet-500 py-8 px-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6" >
+            
+            <!-- Copyright -->
+            <p class="text-white text-md text-center ">
+                &copy; 2026 All rights reserved to Abdelrahman Mostafa
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+
 </body>
 </html>
