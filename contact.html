@@ -3,9 +3,381 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
+    <!-- tailwind css script -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="materal/fa761bd8-2b8b-4604-a4ca-ac9b18de5ac0.jpeg">
 </head>
 <body>
     
+<!-- Navbar -->
+<nav class="top-0 left-0 w-full z-50 backdrop-blur-md fixed bg-black/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <div class="text-xl sm:text-2xl font-bold cursor-pointer text-white">
+          Abdelrahman
+        </div>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-4 lg:space-x-6">
+          <a href="index.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Home</a>
+          <a href="about.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">About me</a>
+          <a href="services.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Services</a>
+          <a href="project.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">My projects</a>
+          <a href="contact.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base border-b-2 border-sky-500">Contact</a>
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="menuBtn" class="md:hidden focus:outline-none text-white text-3xl">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden backdrop-blur-md">
+      <a href="index.html" class="block px-4 py-3 hover:bg-white/10 text-white">Home</a>
+      <a href="about.html" class="block px-4 py-3 hover:bg-white/10 text-white">About me</a>
+      <a href="services.html" class="block px-4 py-3 hover:bg-white/10 text-white">Services</a>
+      <a href="project.html" class="block px-4 py-3 hover:bg-white/10 text-white">My projects</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-white/10 text-white bg-white/10">Contact</a>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="w-full min-h-[50vh] bg-gradient-to-r from-sky-500 to-violet-500 flex items-center justify-center px-4 pt-24 pb-12">
+    <div class="text-center">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Get In Touch</h1>
+        <p class="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+            Have a project in mind? Let's discuss how I can help bring your vision to life
+        </p>
+    </div>
+</section>
+
+<!-- Main Contact Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Contact Info & Form Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            
+            <!-- Contact Information -->
+            <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-10">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">Contact Information</h2>
+                <p class="text-gray-600 text-base sm:text-lg leading-relaxed mb-8">
+                    Feel free to reach out to me through any of the following channels. 
+                    I'm always happy to discuss new projects and opportunities.
+                </p>
+
+                <div class="space-y-6">
+                    
+                    <!-- Email -->
+                    <div class="flex items-start gap-4">
+                        <div class="bg-gradient-to-br from-sky-500 to-blue-600 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <i class="fa-solid fa-envelope text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-base sm:text-lg mb-1">Email</h3>
+                            <a href="mailto:benauf7@gmail.com" class="text-gray-600 hover:text-sky-500 transition text-sm sm:text-base">gomaelmorseygmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="flex items-start gap-4">
+                        <div class="bg-gradient-to-br from-green-500 to-emerald-600 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-base sm:text-lg mb-1">WhatsApp</h3>
+                            <a href="https://wa.me/qr/TRS7X4DEGQ5AB1" class="text-gray-600 hover:text-green-500 transition text-sm sm:text-base">Click to Chat</a>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="flex items-start gap-4">
+                        <div class="bg-gradient-to-br from-violet-500 to-purple-600 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <i class="fa-solid fa-location-dot text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-base sm:text-lg mb-1">Location</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Egypt</p>
+                        </div>
+                    </div>
+
+                    <!-- Availability -->
+                    <div class="flex items-start gap-4">
+                        <div class="bg-gradient-to-br from-yellow-500 to-orange-600 w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
+                            <i class="fa-solid fa-clock text-white text-xl sm:text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 text-base sm:text-lg mb-1">Availability</h3>
+                            <p class="text-gray-600 text-sm sm:text-base">Open for freelance projects</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Social Media -->
+                <div class="mt-8 pt-8 border-t border-gray-200">
+                    <h3 class="font-bold text-gray-800 text-lg mb-4">Follow Me</h3>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/share/1Ae4W8EPcQ/" 
+                           class="bg-gradient-to-br from-blue-600 to-blue-700 text-white w-12 h-12 rounded-full flex items-center justify-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            <i class="fa-brands fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://wa.me/qr/TRS7X4DEGQ5AB1" 
+                           class="bg-gradient-to-br from-green-500 to-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="mailto:benauf7@gmail.com" 
+                           class="bg-gradient-to-br from-red-500 to-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/zxzbody2010?igsh=aHd4b3hjdDBvMjRq" 
+                           class="bg-gradient-to-br from-pink-500 to-rose-600 text-white w-12 h-12 rounded-full flex items-center justify-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/abdelrahman-mostafa-44a06b3a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+                           class="bg-gradient-to-br from-blue-700 to-blue-800 text-white w-12 h-12 rounded-full flex items-center justify-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                            <i class="fa-brands fa-linkedin-in text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-10">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">Send Me a Message</h2>
+                
+                <form id="contactForm" class="space-y-5">
+                    
+                    <!-- Name Fields -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                        <div>
+                            <label for="firstName" class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">First Name *</label>
+                            <input type="text" 
+                                   id="firstName" 
+                                   name="firstName"
+                                   required
+                                   class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition text-sm sm:text-base"
+                                   placeholder="John">
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Last Name *</label>
+                            <input type="text" 
+                                   id="lastName" 
+                                   name="lastName"
+                                   required
+                                   class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition text-sm sm:text-base"
+                                   placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Email *</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email"
+                               required
+                               class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition text-sm sm:text-base"
+                               placeholder="john.doe@example.com">
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+                        <label for="subject" class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Subject *</label>
+                        <input type="text" 
+                               id="subject" 
+                               name="subject"
+                               required
+                               class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition text-sm sm:text-base"
+                               placeholder="Project Inquiry">
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-gray-700 font-semibold mb-2 text-sm sm:text-base">Message *</label>
+                        <textarea id="message" 
+                                  name="message"
+                                  required
+                                  rows="5"
+                                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent transition resize-none text-sm sm:text-base"
+                                  placeholder="Tell me about your project..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" 
+                            id="submitBtn"
+                            class="w-full bg-gradient-to-r from-sky-500 to-violet-500 text-white py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span id="btnText">Send Message</span>
+                    </button>
+
+                    <!-- Success/Error Messages -->
+                    <div id="formMessage" class="hidden p-4 rounded-xl text-center font-semibold"></div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Quick Links Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+        
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">Quick Links</h2>
+        <p class="text-center text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto text-base sm:text-lg">
+            Explore more about my work and services
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- About -->
+            <a href="about.html" class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group text-center">
+                <div class="bg-gradient-to-br from-violet-500 to-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-user text-white text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">About Me</h3>
+                <p class="text-gray-600 text-sm">Learn more about my journey</p>
+            </a>
+
+            <!-- Services -->
+            <a href="services.html" class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group text-center">
+                <div class="bg-gradient-to-br from-sky-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-briefcase text-white text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Services</h3>
+                <p class="text-gray-600 text-sm">See what I can do for you</p>
+            </a>
+
+            <!-- Projects -->
+            <a href="project.html" class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group text-center">
+                <div class="bg-gradient-to-br from-yellow-500 to-orange-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-folder-open text-white text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Projects</h3>
+                <p class="text-gray-600 text-sm">View my recent work</p>
+            </a>
+
+            <!-- Home -->
+            <a href="index.html" class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group text-center">
+                <div class="bg-gradient-to-br from-green-500 to-emerald-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-home text-white text-2xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800 mb-2">Home</h3>
+                <p class="text-gray-600 text-sm">Back to homepage</p>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gradient-to-r from-sky-500 to-violet-500 py-8 px-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col justify-center items-center gap-6">
+            
+            <!-- Copyright -->
+            <p class="text-white text-md text-center">
+                &copy; 2026 All rights reserved to Abdelrahman Mostafa
+            </p>
+
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script>
+    // Initialize EmailJS
+    (function() {
+        emailjs.init("T8soHZ4Po10ecicQn"); // ستحتاج لتغيير هذا
+    })();
+
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const formMessage = document.getElementById('formMessage');
+        
+        // Disable button and show loading
+        submitBtn.disabled = true;
+        btnText.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+        
+        // Get form data
+        const formData = {
+            firstName: document.getElementById('firstName').value,
+            lastName: document.getElementById('lastName').value,
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value,
+            from_email: document.getElementById('email').value,
+            to_email: 'gomaelmorsey@gmail.com'
+        };
+        
+        // Create mailto link as fallback
+        const mailtoLink = `mailto:gomaelmorsey@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+           ` Name: ${formData.firstName} ${formData.lastName}\n 
+            Email: ${formData.email}\n\n 
+            Message:\n${formData.message}`
+        )}`;
+        
+        // Try EmailJS first, fallback to mailto
+        emailjs.send("service_1hmo0tl" , "template_0cjmk6q", {
+            from_name: document.getElementById("firstName").value + ' ' + document.getElementById("lastName").value,
+            from_email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+            to_email: 'gomaelmorsey@gmail.com'
+        }).then(
+            function(response) {
+                // Success
+                formMessage.className = 'block p-4 rounded-xl text-center font-semibold bg-green-100 text-green-700 border border-green-300';
+                formMessage.innerHTML = '<i class="fa-solid fa-check-circle"></i> Message sent successfully! I will get back to you soon.';
+                document.getElementById('contactForm').reset();
+                
+                // Reset button
+                submitBtn.disabled = false;
+                btnText.innerHTML = 'Send Message';
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 5000);
+            },
+            function(error) {
+                // Error - use mailto fallback
+                console.log('EmailJS failed, using mailto fallback');
+                window.location.href = mailtoLink;
+                
+                formMessage.className = 'block p-4 rounded-xl text-center font-semibold bg-blue-100 text-blue-700 border border-blue-300';
+                formMessage.innerHTML = '<i class="fa-solid fa-info-circle"></i> Opening your email client...';
+                
+                // Reset button
+                submitBtn.disabled = false;
+                btnText.innerHTML = 'Send Message';
+                
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 3000);
+            }
+        );
+    });
+</script>
+
 </body>
 </html>
