@@ -3,9 +3,509 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>projects</title>
+    <!-- tailwind css script -->
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="materal/fa761bd8-2b8b-4604-a4ca-ac9b18de5ac0.jpeg">
 </head>
 <body>
-    
+
+<!-- Navbar -->
+<nav class="top-0 left-0 w-full z-50 backdrop-blur-md fixed bg-black/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <div class="text-xl sm:text-2xl font-bold cursor-pointer text-white">
+          Abdelrahman
+        </div>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex space-x-4 lg:space-x-6">
+          <a href="index.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Home</a>
+          <a href="about.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">About me</a>
+          <a href="services.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Services</a>
+          <a href="project.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base border-b-2 border-sky-500">My projects</a>
+          <a href="contact.html" class="hover:text-sky-500 transition text-white text-sm lg:text-base">Contact</a>
+        </div>
+
+        <!-- Mobile Button -->
+        <button id="menuBtn" class="md:hidden focus:outline-none text-white text-3xl">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden backdrop-blur-md">
+      <a href="index.html" class="block px-4 py-3 hover:bg-white/10 text-white">Home</a>
+      <a href="about.html" class="block px-4 py-3 hover:bg-white/10 text-white">About me</a>
+      <a href="services.html" class="block px-4 py-3 hover:bg-white/10 text-white">Services</a>
+      <a href="project.html" class="block px-4 py-3 hover:bg-white/10 text-white bg-white/10">My projects</a>
+      <a href="contact.html" class="block px-4 py-3 hover:bg-white/10 text-white">Contact</a>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section class="w-full min-h-[50vh] bg-gradient-to-r from-sky-500 to-violet-500 flex items-center justify-center px-4 pt-24 pb-12">
+    <div class="text-center">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">My Projects</h1>
+        <p class="text-base sm:text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+            A showcase of my recent work and creative solutions for clients
+        </p>
+    </div>
+</section>
+
+<!-- Main Projects Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        
+        <!-- Projects Overview Card -->
+        <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12 mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">Portfolio Highlights</h2>
+            <p class="text-center text-gray-600 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto mb-8">
+                Each project represents a unique challenge and a creative solution. 
+                I take pride in delivering high-quality work that exceeds expectations and helps 
+                my clients achieve their goals through beautiful, functional websites.
+            </p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project 1 - E-Commerce Website -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-violet-500 to-purple-600 p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+                    
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                        <i class="fa-solid fa-shopping-cart text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center relative z-10">E-Commerce Store</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <div class="mb-4">
+                        <span class="inline-block bg-violet-100 text-violet-600 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">HTML</span>
+                        <span class="inline-block bg-violet-100 text-violet-600 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">CSS</span>
+                        <span class="inline-block bg-violet-100 text-violet-600 px-3 py-1 rounded-full text-xs font-semibold mb-2">JavaScript</span>
+                    </div>
+                    
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        A fully responsive e-commerce website with modern design, shopping cart functionality, 
+                        and smooth user experience. Built with clean code and optimized performance.
+                    </p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-violet-500"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-violet-500"></i>
+                            <span>Shopping Cart System</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-violet-500"></i>
+                            <span>Product Filtering</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-violet-500 to-purple-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-eye"></i>
+                        View Project
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 2 - Restaurant Website -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-yellow-500 to-orange-600 p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+                    
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                        <i class="fa-solid fa-utensils text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center relative z-10">Restaurant Website</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <div class="mb-4">
+                        <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">HTML</span>
+                        <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">Tailwind</span>
+                        <span class="inline-block bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-semibold mb-2">JavaScript</span>
+                    </div>
+                    
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        An elegant restaurant website featuring online menu, reservation system, 
+                        and beautiful food gallery. Designed to attract customers and boost bookings.
+                    </p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-yellow-600"></i>
+                            <span>Online Menu Display</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-yellow-600"></i>
+                            <span>Reservation Form</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-yellow-600"></i>
+                            <span>Image Gallery</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-yellow-500 to-orange-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-eye"></i>
+                        View Project
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 3 - Portfolio Website -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-sky-500 to-blue-600 p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+                    
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                        <i class="fa-solid fa-briefcase text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center relative z-10">Portfolio Website</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <div class="mb-4">
+                        <span class="inline-block bg-sky-100 text-sky-600 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">HTML</span>
+                        <span class="inline-block bg-sky-100 text-sky-600 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">CSS</span>
+                        <span class="inline-block bg-sky-100 text-sky-600 px-3 py-1 rounded-full text-xs font-semibold mb-2">Bootstrap</span>
+                    </div>
+                    
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        A creative portfolio website for a freelance designer showcasing their work 
+                        with stunning visuals and smooth animations.
+                    </p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-sky-500"></i>
+                            <span>Project Showcase</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-sky-500"></i>
+                            <span>Smooth Animations</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-sky-500"></i>
+                            <span>Contact Form</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-sky-500 to-blue-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-eye"></i>
+                        View Project
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 4 - Landing Page -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-green-500 to-emerald-600 p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+                    
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                        <i class="fa-solid fa-rocket text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center relative z-10">Landing Page</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <div class="mb-4">
+                        <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">HTML</span>
+                        <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">Tailwind</span>
+                        <span class="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-semibold mb-2">JavaScript</span>
+                    </div>
+                    
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        High-converting landing page for a SaaS product with clear call-to-actions, 
+                        feature highlights, and testimonials section.
+                    </p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-green-600"></i>
+                            <span>Hero Section</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-green-600"></i>
+                            <span>Features Showcase</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-green-600"></i>
+                            <span>Testimonials</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-green-500 to-emerald-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-eye"></i>
+                        View Project
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project 5 - Blog Website -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-pink-500 to-rose-600 p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+                    
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                        <i class="fa-solid fa-blog text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center relative z-10">Blog Website</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <div class="mb-4">
+                        <span class="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">HTML</span>
+                        <span class="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">CSS</span>
+                        <span class="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-semibold mb-2">JavaScript</span>
+                    </div>
+                    
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        A modern blog platform with clean typography, easy navigation, 
+                        and reading-friendly layout. Perfect for content creators.
+                    </p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-pink-600"></i>
+                            <span>Article Listing</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-pink-600"></i>
+                            <span>Search Function</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-pink-600"></i>
+                            <span>Category Filter</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-pink-500 to-rose-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-eye"></i>
+                        View Project
+                    </button>
+                </div>
+            </div>
+
+<!-- Project 6 - Corporate Website -->
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
+                <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-8 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+                    <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+                    
+                    <div class="bg-white/20 backdrop-blur-md w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 relative z-10">
+                        <i class="fa-solid fa-building text-4xl sm:text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white text-center relative z-10">Corporate Website</h3>
+                </div>
+                
+                <div class="p-6 sm:p-8">
+                    <div class="mb-4">
+                        <span class="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">HTML</span>
+                        <span class="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-semibold mr-2 mb-2">Bootstrap</span>
+                        <span class="inline-block bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-xs font-semibold mb-2">JavaScript</span>
+                    </div>
+                    
+                    <p class="text-gray-700 text-sm sm:text-base leading-relaxed mb-6">
+                        Professional corporate website with company information, services overview, 
+                        team profiles, and client testimonials.
+                    </p>
+                    
+                    <div class="space-y-2 mb-6">
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-indigo-600"></i>
+                            <span>About Company</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-indigo-600"></i>
+                            <span>Team Profiles</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-gray-600">
+                            <i class="fa-solid fa-check-circle text-indigo-600"></i>
+                            <span>Client Reviews</span>
+                        </div>
+                    </div>
+
+                    <button class="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-eye"></i>
+                        View Project
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Technologies Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+        
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">Technologies I Use</h2>
+        <p class="text-center text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto text-base sm:text-lg">
+            Modern tools and frameworks to build exceptional websites
+        </p>
+
+        <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
+                
+                <!-- HTML -->
+                <div class="text-center group cursor-pointer">
+                    <div class="bg-gradient-to-br from-orange-100 to-orange-200 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-brands fa-html5 text-3xl sm:text-4xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-800">HTML5</h3>
+                </div>
+
+                <!-- CSS -->
+                <div class="text-center group cursor-pointer">
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-brands fa-css3-alt text-3xl sm:text-4xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-800">CSS3</h3>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="text-center group cursor-pointer">
+                    <div class="bg-gradient-to-br from-yellow-100 to-yellow-200 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-brands fa-square-js text-3xl sm:text-4xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-800">JavaScript</h3>
+                </div>
+
+                <!-- Tailwind -->
+                <div class="text-center group cursor-pointer">
+                    <div class="bg-gradient-to-br from-cyan-100 to-cyan-200 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <i class="devicon-tailwindcss-plain text-3xl sm:text-4xl text-cyan-600"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-800">Tailwind</h3>
+                </div>
+
+                <!-- Bootstrap -->
+                <div class="text-center group cursor-pointer col-span-2 sm:col-span-1">
+                    <div class="bg-gradient-to-br from-purple-100 to-purple-200 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-3 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-brands fa-bootstrap text-3xl sm:text-4xl text-purple-700"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-bold text-gray-800">Bootstrap</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4">
+    <div class="max-w-6xl mx-auto">
+        
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">Project Statistics</h2>
+        <p class="text-center text-gray-600 mb-8 sm:mb-12 max-w-2xl mx-auto text-base sm:text-lg">
+            Numbers that showcase my dedication and experience
+        </p>
+
+        <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 md:p-12">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                
+                <!-- Total Projects -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-violet-500 to-purple-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-folder-open text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">30+</h3>
+                    <p class="text-gray-600 text-sm sm:text-base font-semibold">Total Projects</p>
+                </div>
+
+                <!-- Happy Clients -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-green-500 to-emerald-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-face-smile text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">50+</h3>
+                    <p class="text-gray-600 text-sm sm:text-base font-semibold">Happy Clients</p>
+                </div>
+
+                <!-- Code Quality -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-yellow-500 to-orange-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-code text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">100%</h3>
+                    <p class="text-gray-600 text-sm sm:text-base font-semibold">Clean Code</p>
+                </div>
+
+                <!-- Satisfaction -->
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-sky-500 to-blue-600 w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <i class="fa-solid fa-star text-white text-2xl sm:text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-2">90%</h3>
+                    <p class="text-gray-600 text-sm sm:text-base font-semibold">Satisfaction</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="w-full py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-r from-violet-500 via-purple-500 to-pink-500">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+            Have a Project in Mind?
+        </h2>
+        <p class="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-2xl mx-auto">
+            Let's collaborate and create something amazing together
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="inline-flex items-center justify-center gap-3 bg-white text-violet-500 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 hover:text-gray-800 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                <i class="fa-solid fa-paper-plane"></i>
+                Contact Me
+            </a>
+            <a href="services.html" class="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-violet-500 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+                <i class="fa-solid fa-briefcase"></i>
+                View Services
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gradient-to-r from-sky-500 to-violet-500 py-8 px-4">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col justify-center items-center">
+            
+            <!-- Copyright -->
+            <p class="text-white text-md text-center">
+                &copy; 2026 All rights reserved to Abdelrahman Mostafa
+            </p>
+
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+
 </body>
 </html>
